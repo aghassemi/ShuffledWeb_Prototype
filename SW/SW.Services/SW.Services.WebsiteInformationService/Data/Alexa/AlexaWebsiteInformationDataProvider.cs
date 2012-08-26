@@ -5,13 +5,13 @@ using System.Text;
 
 namespace SW.Services.WebsiteInformationService.Data.Alexa
 {
-	internal class AlexaWebsiteInformationDataProvider :IWebsiteInformationDataProvider {
+	internal class AlexaWebsiteInformationDataProvider : IAlexaWebsiteInformationDataProvider {
 
 		public AlexaWebsiteInformationDataProvider() {
 			
 		}
 
-		string IWebsiteInformationDataProvider.GetRaw( string url ) {
+		string IAlexaWebsiteInformationDataProvider.GetRaw( string url ) {
 			AWISRequest request = new AWISRequest( url );
 			return request.Execute();
 		}

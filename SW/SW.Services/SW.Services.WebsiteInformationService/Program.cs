@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using SW.Services.WebsiteInformationService.Data;
+using SW.Services.WebsiteInformationService.Data.Alexa;
+using SW.Services.WebsiteInformationService.Data.GoogleSafeBrowsing;
 
 namespace SW.Services.WebsiteInformationService
 {
@@ -11,11 +12,14 @@ namespace SW.Services.WebsiteInformationService
 	{
 		public static void Main(string[] args)
 		{
-			WebsiteInformationDataProviderFactory factory = new WebsiteInformationDataProviderFactory();
-			IWebsiteInformationDataProvider dp = factory.Create();
 
-			string site = "yahoo.com";
-			Console.Write(  dp.GetRaw( site ) );
+			IAlexaWebsiteInformationDataProvider alexadp = new AlexaWebsiteInformationDataProviderFactory().Create();
+			IGoogleSafeBrowsingDataProvider gsbdp = new GoogleSafeBrowsingDataProviderFactory().Create();
+
+			string site = "ianfette.org";
+			//Console.Write( alexadp.GetRaw( site ) );
+			Console.Write( "-------------------------\n" );
+			Console.Write( gsbdp.GetRaw( site ) );
 
 			while( true ){}
 		}

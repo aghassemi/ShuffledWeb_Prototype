@@ -76,12 +76,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Alexa\AlexaWebsiteInformationDataProvider.cs" />
+    <Compile Include="Data\Alexa\AlexaWebsiteInformationDataProviderFactory.cs" />
     <Compile Include="Data\Alexa\AWISRequest.cs" />
+    <Compile Include="Data\Alexa\IAlexaWebsiteInformationDataProvider.cs" />
     <Compile Include="Data\Alexa\SignedRequestHelper.cs" />
-    <Compile Include="Data\IWebsiteInformationDataProvider.cs" />
-    <Compile Include="Data\WebsiteInformationDataProviderFactory.cs" />
+    <Compile Include="Data\GoogleSafeBrowsing\GoogleSafeBrowsingDataProvider.cs" />
+    <Compile Include="Data\GoogleSafeBrowsing\GoogleSafeBrowsingDataProviderFactory.cs" />
+    <Compile Include="Data\GoogleSafeBrowsing\GSBRequest.cs" />
+    <Compile Include="Data\GoogleSafeBrowsing\IGoogleSafeBrowsingDataProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="assemblyinfo.cs" />
+    <Compile Include="Utility\RfcUrlEncoder.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

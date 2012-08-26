@@ -4,14 +4,13 @@ using System.Configuration;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Linq;
 using System.Net;
 using System.Web;
 using System.IO;
 
 namespace SW.Services.WebsiteInformationService.Data.Alexa {
 	
-	public class AWISRequest {
+	internal class AWISRequest {
 
 		private string m_websiteUrl;
 
