@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SW.Services.Alexa")]
+[assembly: AssemblyTitle("SW.Services.WebsiteInformationService")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SW.Services.Alexa")]
+[assembly: AssemblyProduct("SW.Services.WebsiteInformationService")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8588ac9c-7a3f-41e7-9d55-1124eff5b1f4")]
+// [assembly: Guid("33c28055-0695-41cf-a86f-34a8e5100688")]
 
 // Version information for an assembly consists of the following four values:
 //
