@@ -1,0 +1,5 @@
+C:\ShuffledWeb\SW\bin\SW.Foundation.dll.config
+C:\ShuffledWeb\SW\bin\SW.Foundation.dll
+C:\ShuffledWeb\SW\bin\SW.Foundation.pdb
+C:\ShuffledWeb\SW\SW.Foundation\obj\Debug\SW.Foundation.dll
+C:\ShuffledWeb\SW\SW.Foundation\obj\Debug\SW.Foundation.pdb

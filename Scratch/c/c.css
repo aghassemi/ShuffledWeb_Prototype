@@ -53,6 +53,12 @@ iframe {
 }
 
 a {
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.toolbar .next {
     padding: 10px;
     display:inline-block;
     width: 900px;

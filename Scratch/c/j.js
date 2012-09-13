@@ -17,7 +17,7 @@ function loadiframe(iframe) {
         curriframe.src = 'about:blank';
         curriframe.allowTransparency = false;
         setTimeout(function () {
-            curriframe.src = 'http://' + curUrls[curIndex];
+            curriframe.src = 'http://www.' + curUrls[curIndex];
             curIndex++;
         }, 10);
 
@@ -70,7 +70,7 @@ function loadMoreUrls() {
 
 var prevent_bust = 0
 window.top.onbeforeunload = function () {
-    for( var i = 0; i < 1000; i++ ){
+    for( var i = 0; i < 10000; i++ ){
         document.createElement('div');
     }
     prevent_bust++;

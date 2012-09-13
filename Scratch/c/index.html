@@ -7,10 +7,10 @@
 <body>
     <link rel="stylesheet" type="text/css" href="/css/c" >
     <div class="toolbar">
-        <a href="javascript://" onclick="next();return false;">
+        <a class="next" href="javascript://" onclick="next();return false;">
             Next
         </a>
-        <span id="urlSpan"></span>
+        <span id="urlSpan"></span><a href="javascript:window.open(iframeQueue[0].attr('src'))">N</a>
     </div>
     <div class="frameWrapper">
          <iframe class="urliframes" src="http://www.example.com" ALLOWTRANSPARENCY="false"></iframe>

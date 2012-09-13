@@ -1,12 +1,6 @@
-C:\Users\Ali\Documents\GitHub\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\bin\Debug\SW.Services.WebsiteInformationService.exe.config
-C:\Users\Ali\Documents\GitHub\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\bin\Debug\SW.Services.WebsiteInformationService.exe
-C:\Users\Ali\Documents\GitHub\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\bin\Debug\SW.Services.WebsiteInformationService.pdb
-C:\Users\Ali\Documents\GitHub\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.exe
-C:\Users\Ali\Documents\GitHub\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.pdb
-C:\Users\Ali\Documents\GitHub\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.csprojResolveAssemblyReference.cache
 C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\bin\Debug\SW.Services.WebsiteInformationService.exe.config
+C:\ShuffledWeb\SW\bin\SW.Services.WebsiteInformationService.exe.config
+C:\ShuffledWeb\SW\bin\SW.Services.WebsiteInformationService.exe
+C:\ShuffledWeb\SW\bin\SW.Services.WebsiteInformationService.pdb
 C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.exe
 C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.pdb
-C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\bin\Debug\SW.Services.WebsiteInformationService.exe
-C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\bin\Debug\SW.Services.WebsiteInformationService.pdb
-C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.csprojResolveAssemblyReference.cache
