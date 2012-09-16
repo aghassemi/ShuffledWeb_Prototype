@@ -4,3 +4,4 @@ C:\ShuffledWeb\SW\bin\SW.Services.WebsiteInformationService.exe
 C:\ShuffledWeb\SW\bin\SW.Services.WebsiteInformationService.pdb
 C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.exe
 C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.pdb
+C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Debug\SW.Services.WebsiteInformationService.csprojResolveAssemblyReference.cache

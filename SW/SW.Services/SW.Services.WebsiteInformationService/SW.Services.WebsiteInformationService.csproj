@@ -65,6 +65,14 @@
   </Target>
   -->
   <ItemGroup>
+    <Reference Include="SW.Foundation, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\SW.Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="SW.Services.UrlImport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\SW.Services.UrlImport.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -80,10 +88,12 @@
     <Compile Include="Data\Alexa\AWISRequest.cs" />
     <Compile Include="Data\Alexa\IAlexaWebsiteInformationDataProvider.cs" />
     <Compile Include="Data\Alexa\SignedRequestHelper.cs" />
-    <Compile Include="Data\GoogleSafeBrowsing\GoogleSafeBrowsingDataProvider.cs" />
-    <Compile Include="Data\GoogleSafeBrowsing\GoogleSafeBrowsingDataProviderFactory.cs" />
-    <Compile Include="Data\GoogleSafeBrowsing\GSBRequest.cs" />
-    <Compile Include="Data\GoogleSafeBrowsing\IGoogleSafeBrowsingDataProvider.cs" />
+    <Compile Include="GoogleSafeBrowsing\Data\GoogleSafeBrowsingDataProvider.cs" />
+    <Compile Include="GoogleSafeBrowsing\Data\GSBResultDTO.cs" />
+    <Compile Include="GoogleSafeBrowsing\Data\GSBUrlDTO.cs" />
+    <Compile Include="GoogleSafeBrowsing\GoogleSafeBrowsingManager.cs" />
+    <Compile Include="GoogleSafeBrowsing\GSBRequest.cs" />
+    <Compile Include="GoogleSafeBrowsing\GSBResultType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="assemblyinfo.cs" />
     <Compile Include="Utility\RfcUrlEncoder.cs" />

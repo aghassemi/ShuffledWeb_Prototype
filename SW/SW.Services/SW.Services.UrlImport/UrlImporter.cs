@@ -20,7 +20,7 @@ namespace SW.Services.UrlImport {
 				urls.Select(
 					u => 
 					new UrlDTO(
-						new ShortGuid().ToString(),
+						ShortGuid.NewGuid().ToString(),
 						u.Value,
 						u.Rank
 					)

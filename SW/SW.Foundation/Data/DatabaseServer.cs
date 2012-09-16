@@ -12,7 +12,7 @@ namespace SW.Foundation.Data {
 		public static SqlConnection SqlConnection {
 			get {
 				return new SqlConnection(
-						ConfigurationManager.ConnectionStrings["SqlServer"].ConnectionString
+						ConfigurationManager.ConnectionStrings["Sql"].ConnectionString
 					);
 			}
 		}

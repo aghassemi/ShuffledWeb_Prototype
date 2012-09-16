@@ -168,7 +168,7 @@ namespace SW.Services.UrlImport
 		/// <returns></returns>
 		public static string Encode(Guid guid)
 		{
-			string encoded = Convert.ToBase64String(guid.ToByteArray());
+			string encoded = Convert.ToBase64String(guid.ToByteArray()).ToUpperInvariant();
 			encoded = encoded
 				.Replace("/", "_")
 				.Replace("+", "-");

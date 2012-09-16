@@ -7,6 +7,7 @@ namespace SW.Foundation {
 	/// shorter string value. Sguid
 	/// </summary>
 	public struct ShortGuid {
+
 		#region Static
 
 		/// <summary>
@@ -241,5 +242,6 @@ namespace SW.Foundation {
 		}
 
 		#endregion
+
 	}
 }

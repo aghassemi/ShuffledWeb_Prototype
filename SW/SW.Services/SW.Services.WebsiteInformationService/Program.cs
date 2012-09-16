@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using SW.Services.WebsiteInformationService.Data.Alexa;
-using SW.Services.WebsiteInformationService.Data.GoogleSafeBrowsing;
+using SW.Services.WebsiteInformationService.GoogleSafeBrowsing;
 
 namespace SW.Services.WebsiteInformationService
 {
@@ -13,13 +13,16 @@ namespace SW.Services.WebsiteInformationService
 		public static void Main(string[] args)
 		{
 
-			IAlexaWebsiteInformationDataProvider alexadp = new AlexaWebsiteInformationDataProviderFactory().Create();
-			IGoogleSafeBrowsingDataProvider gsbdp = new GoogleSafeBrowsingDataProviderFactory().Create();
+			//IAlexaWebsiteInformationDataProvider alexadp = new AlexaWebsiteInformationDataProviderFactory().Create();
+		
+			//string site = "unicef.org";
+			//Console.Write( alexadp.GetRaw( site ) );
+			//Console.Write( "-------------------------\n" );
+			//Console.Write( gsbdp.GetRaw( site ) );
 
-			string site = "unicef.org";
-			Console.Write( alexadp.GetRaw( site ) );
-			Console.Write( "-------------------------\n" );
-			Console.Write( gsbdp.GetRaw( site ) );
+			GoogleSafeBrowsing.GoogleSafeBrowsingManager gsbManager = new GoogleSafeBrowsing.GoogleSafeBrowsingManager();
+
+			gsbManager.UpdateNew();
 
 			while( true ){}
 		}

@@ -1,0 +1,6 @@
+C:\ShuffledWeb\SW\bin\SW.Services.CSVUrlImportRunner.exe.config
+C:\ShuffledWeb\SW\bin\SW.Services.CSVUrlImportRunner.exe
+C:\ShuffledWeb\SW\bin\SW.Services.CSVUrlImportRunner.pdb
+C:\ShuffledWeb\SW\SW.Services\SW.Services.CSVUrlImportRunner\obj\Debug\SW.Services.CSVUrlImportRunner.csprojResolveAssemblyReference.cache
+C:\ShuffledWeb\SW\SW.Services\SW.Services.CSVUrlImportRunner\obj\Debug\SW.Services.CSVUrlImportRunner.exe
+C:\ShuffledWeb\SW\SW.Services\SW.Services.CSVUrlImportRunner\obj\Debug\SW.Services.CSVUrlImportRunner.pdb

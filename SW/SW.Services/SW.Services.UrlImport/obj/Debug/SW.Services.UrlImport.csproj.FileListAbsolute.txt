@@ -1,6 +1,6 @@
 C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\bin\Debug\SW.Services.UrlImport.dll
 C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\bin\Debug\SW.Services.UrlImport.pdb
-C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\obj\Debug\SW.Services.UrlImport.dll
-C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\obj\Debug\SW.Services.UrlImport.pdb
 C:\ShuffledWeb\SW\bin\SW.Services.UrlImport.dll
 C:\ShuffledWeb\SW\bin\SW.Services.UrlImport.pdb
+C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\obj\Debug\SW.Services.UrlImport.dll
+C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\obj\Debug\SW.Services.UrlImport.pdb
