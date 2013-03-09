@@ -1,0 +1,5 @@
+C:\ShuffledWeb\SW\bin\SW.Services.UrlImport.dll
+C:\ShuffledWeb\SW\bin\SW.Services.UrlImport.pdb
+C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\obj\Release\SW.Services.UrlImport.dll
+C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\obj\Release\SW.Services.UrlImport.pdb
+C:\ShuffledWeb\SW\SW.Services\SW.Services.UrlImport\obj\Release\SW.Services.UrlImport.csprojResolveAssemblyReference.cache

@@ -25,27 +25,32 @@ namespace SW.Services.WebsiteInformationService.GoogleSafeBrowsing {
 
 		private void Update( IEnumerable<GSBUrlDTO> dtos ) {
 			
-			Parallel.ForEach(
-				dtos,
-				currentDto => {
-					
-					GSBResultType gsbResultType = new GSBRequest( currentDto.Url ).Execute();
-					if( gsbResultType != GSBResultType.Unknown ) {
-						GSBResultDTO gsbResultDTO = new GSBResultDTO(
-							currentDto.Id,
-							gsbResultType == GSBResultType.Malware || gsbResultType == GSBResultType.BothPhishingAndMalware,
-							gsbResultType == GSBResultType.Phishing || gsbResultType == GSBResultType.BothPhishingAndMalware
-						);
+			foreach( GSBUrlDTO dto in dtos ) {
 
-						m_dp.Update(
-							gsbResultDTO
-						);
-					} else {
-						//TODO: Log
-					}
+				GSBResultType gsbResultType = GSBResultType.Unknown;
+				try {
+					gsbResultType = new GSBRequest( dto.Url ).Execute();
+				} catch( GSBBackOffException e ) {
+						
+					// Backoff for 2 hours
+					var backOffTime = 2 * 60 * 60 * 1000;
+					System.Threading.Thread.Sleep( backOffTime );
+				}
+				if( gsbResultType != GSBResultType.Unknown ) {
+					GSBResultDTO gsbResultDTO = new GSBResultDTO(
+						dto.Id,
+						gsbResultType == GSBResultType.Malware || gsbResultType == GSBResultType.BothPhishingAndMalware,
+						gsbResultType == GSBResultType.Phishing || gsbResultType == GSBResultType.BothPhishingAndMalware
+					);
 
-				} 
-			);
+					m_dp.Update(
+						gsbResultDTO
+					);
+				} else {
+					//TODO: Log
+				}
+
+			} 
 		}
 
 	}

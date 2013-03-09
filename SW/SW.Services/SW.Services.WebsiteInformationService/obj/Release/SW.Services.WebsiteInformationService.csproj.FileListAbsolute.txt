@@ -1,0 +1,6 @@
+C:\ShuffledWeb\SW\bin\SW.Services.WebsiteInformationService.pdb
+C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Release\SW.Services.WebsiteInformationService.pdb
+C:\ShuffledWeb\SW\bin\SW.Services.WebsiteInformationService.dll.config
+C:\ShuffledWeb\SW\bin\SW.Services.WebsiteInformationService.dll
+C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Release\SW.Services.WebsiteInformationService.dll
+C:\ShuffledWeb\SW\SW.Services\SW.Services.WebsiteInformationService\obj\Release\SW.Services.WebsiteInformationService.csprojResolveAssemblyReference.cache

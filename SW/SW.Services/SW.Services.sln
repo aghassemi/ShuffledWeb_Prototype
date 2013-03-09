@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW.Services.UrlImport", "SW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW.Services.AlexaUrlImportRunner", "SW.Services.AlexaUrlImportRunner\SW.Services.AlexaUrlImportRunner.csproj", "{5A2B625F-7055-45CC-A3C0-B3C91D552250}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW.Services.GoogleSafeBrowsingRunner", "SW.Services.GoogleSafeBrowsingRunner\SW.Services.GoogleSafeBrowsingRunner.csproj", "{84AFCB05-F5BA-47DB-9CFE-1BA16A23E170}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5A2B625F-7055-45CC-A3C0-B3C91D552250}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A2B625F-7055-45CC-A3C0-B3C91D552250}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A2B625F-7055-45CC-A3C0-B3C91D552250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84AFCB05-F5BA-47DB-9CFE-1BA16A23E170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84AFCB05-F5BA-47DB-9CFE-1BA16A23E170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84AFCB05-F5BA-47DB-9CFE-1BA16A23E170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84AFCB05-F5BA-47DB-9CFE-1BA16A23E170}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E11FC33D-B544-4975-9BB1-854A1BF3F724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E11FC33D-B544-4975-9BB1-854A1BF3F724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E11FC33D-B544-4975-9BB1-854A1BF3F724}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -25,26 +25,36 @@ namespace SW.Services.WebsiteInformationService.GoogleSafeBrowsing {
 
 			GSBResultType result = GSBResultType.Unknown;
 			HttpWebRequest request = (HttpWebRequest)WebRequest.Create( BuildQueryUrl() );
-			HttpWebResponse webResponse = (HttpWebResponse)request.GetResponse();
-			Stream webResponseStream = webResponse.GetResponseStream();
-			if( webResponse.StatusCode == HttpStatusCode.NoContent ) {
-				result = GSBResultType.Safe;
-			} else if( webResponse.StatusCode == HttpStatusCode.OK )  {
-				string response;
-				using ( StreamReader responseReader = new StreamReader( webResponseStream ) ) {
-					response = responseReader.ReadToEnd();
+			try {
+				HttpWebResponse webResponse = (HttpWebResponse)request.GetResponse();
+				Stream webResponseStream = webResponse.GetResponseStream();
+
+				if ( webResponse.StatusCode == HttpStatusCode.NoContent ) {
+					result = GSBResultType.Safe;
+				} else if ( webResponse.StatusCode == HttpStatusCode.OK ) {
+					string response;
+					using ( StreamReader responseReader = new StreamReader( webResponseStream ) ) {
+						response = responseReader.ReadToEnd();
+					}
+
+					switch ( response.ToLowerInvariant() ) {
+						case "malware":
+							result = GSBResultType.Malware;
+							break;
+						case "phishing":
+							result = GSBResultType.Phishing;
+							break;
+						case "phishing,malware":
+							result = GSBResultType.BothPhishingAndMalware;
+							break;
+					}
 				}
-				
-				switch( response.ToLowerInvariant() ) {
-					case "malware":
-						result = GSBResultType.Malware;
-						break;
-					case "phishing":
-						result = GSBResultType.Phishing;
-						break;
-					case "phishing,malware":
-						result = GSBResultType.BothPhishingAndMalware;
-						break;
+
+			} catch( WebException e ) {
+				if ( ((HttpWebResponse)e.Response).StatusCode == HttpStatusCode.Forbidden ) {
+					throw new GSBBackOffException();
+				} else {
+					throw;
 				}
 			}
 

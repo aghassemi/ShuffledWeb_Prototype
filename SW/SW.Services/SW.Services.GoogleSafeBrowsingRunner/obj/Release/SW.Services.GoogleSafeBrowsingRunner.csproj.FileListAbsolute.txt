@@ -1,0 +1,6 @@
+C:\ShuffledWeb\SW\bin\SW.Services.GoogleSafeBrowsingRunner.exe
+C:\ShuffledWeb\SW\bin\SW.Services.GoogleSafeBrowsingRunner.pdb
+C:\ShuffledWeb\SW\SW.Services\SW.Services.GoogleSafeBrowsingRunner\obj\Release\SW.Services.GoogleSafeBrowsingRunner.csprojResolveAssemblyReference.cache
+C:\ShuffledWeb\SW\SW.Services\SW.Services.GoogleSafeBrowsingRunner\obj\Release\SW.Services.GoogleSafeBrowsingRunner.exe
+C:\ShuffledWeb\SW\SW.Services\SW.Services.GoogleSafeBrowsingRunner\obj\Release\SW.Services.GoogleSafeBrowsingRunner.pdb
+C:\ShuffledWeb\SW\bin\SW.Services.GoogleSafeBrowsingRunner.exe.config

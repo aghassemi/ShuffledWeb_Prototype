@@ -44,19 +44,22 @@ namespace SW.Services.WebsiteInformationService.GoogleSafeBrowsing.Data {
 			return GetUrlDTOResult( cmd );
 		}
 
-		private IEnumerable<GSBUrlDTO> GetUrlDTOResult( SqlCommand cmd ) {
-
+		private List<GSBUrlDTO> GetUrlDTOResult( SqlCommand cmd ) {
+			
+			List<GSBUrlDTO> result = new List<GSBUrlDTO>();
 			cmd.Connection.Open();
 			using ( SqlDataReader reader = cmd.ExecuteReader() ) {
 				while ( reader.Read() ) {
-					yield return
+					result.Add(
 						new GSBUrlDTO(
 							reader["Id"].ToString(),
 							reader["Url"].ToString()
-						);
+						)
+					);
 				}
 			}
 			cmd.Connection.Close();
+			return result;
 		} 
 	}
 }

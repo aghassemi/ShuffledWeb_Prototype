@@ -1,0 +1,6 @@
+C:\ShuffledWeb\SW\bin\SW.Services.AlexaUrlImportRunner.exe.config
+C:\ShuffledWeb\SW\bin\SW.Services.AlexaUrlImportRunner.exe
+C:\ShuffledWeb\SW\bin\SW.Services.AlexaUrlImportRunner.pdb
+C:\ShuffledWeb\SW\SW.Services\SW.Services.AlexaUrlImportRunner\obj\Release\SW.Services.AlexaUrlImportRunner.csprojResolveAssemblyReference.cache
+C:\ShuffledWeb\SW\SW.Services\SW.Services.AlexaUrlImportRunner\obj\Release\SW.Services.AlexaUrlImportRunner.exe
+C:\ShuffledWeb\SW\SW.Services\SW.Services.AlexaUrlImportRunner\obj\Release\SW.Services.AlexaUrlImportRunner.pdb
