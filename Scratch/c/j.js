@@ -75,17 +75,11 @@ window.top.onbeforeunload = function () {
     }
     prevent_bust++;
 };
+
 setInterval(function () {
     if (prevent_bust > 0) {
         prevent_bust -= 2
-
-        //TODO
-        //firefox remove body, we need to call next if FF
-        //console.log(window.top.location);
-        window.top.location = 'http://localhost:8080/b';
-
-        // if FF 
-        // setTimeout(function () { next(); },1);
+        window.top.location = location.protocol+'//'+location.hostname + (location.port ? ':'+location.port: ''); '/b';
     }
 }, 1);
 

@@ -4,8 +4,12 @@ var fs = require("./fileServer");
 var urls = [];
 
 csv.each("top-1m.csv").addListener("data", function (data) {
+
     urls.push(data[1]);
+
 });
+
+var port = process.env.PORT || 8080;
 
 http.createServer(function (req, res) {
     try {
@@ -14,9 +18,8 @@ http.createServer(function (req, res) {
         serverError(req, res);
         console.log(e);
     }
-}).listen(8080, '127.0.0.1');
+}).listen(port);
 
-console.log('Server running at http://127.0.0.1:8080/');
 
 var handleRequest = function( req, res ) {
     var urlParts = require('url').parse(req.url);
@@ -67,7 +70,7 @@ var serve204 = function (req, res) {
 var getNextUrls = function() {
     var result = [];
     for( var i = 0; i < 50; i++ ) {
-        var index = Math.floor(Math.random() * 0.3 * urls.length);
+        var index = Math.floor(Math.random() * 0.7 * urls.length);
         result.push( urls[index] );
     }
     return result;
